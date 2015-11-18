@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+.map-container {
+    width: 450px;
+    max-width: 450px;
+    height: 450px;
+}
+
+.table.basket {
+    margin-left: 40px;
+}
+
+.center-block {
+    width: 90%;
+}

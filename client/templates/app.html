@@ -1,0 +1,12 @@
+<template name="app">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Liste des magasins {{ shopName }}</h1>
+            {{#if showLink}}<a class="link-file" href="/csv/{{ placeIds }}">Télécharger le fichier</a>{{/if}}
+        </div>
+    </div>
+    <div class="center-block">
+        <div class="pull-left">{{> map }}</div>
+        <div class="pull-left">{{> basket }}</div>
+    </div>
+</template>

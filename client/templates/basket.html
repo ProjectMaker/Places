@@ -1,0 +1,23 @@
+<template name="basket">
+    <table class="table table-striped basket">
+        <thead>
+        <tr>
+            <th width="30px">#</th>
+            <th width="80%">Adresse</th>
+            <th width="80px"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#if noPlace}}
+            <tr><td colspan="3" align="center">Votre panier est vide</td></tr>
+        {{/if}}
+        {{#each places}}
+            <tr>
+                <td>#</td>
+                <td>{{ address }}</td>
+                <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</template>
